@@ -14,7 +14,7 @@ public class TestApi {
     private Gson gson = new GsonBuilder().create();
 
     @POST
-    public Response addNewUser(String inputJson) {
+    public Response processMessage(String inputJson) {
         String resultText;
         try {
             Message inputMessage = gson.fromJson(inputJson, Message.class);
